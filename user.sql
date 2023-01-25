@@ -1,0 +1,15 @@
+CREATE DATABASE MinimalApi --EXECUTAR ESSA LINHA PRIMEIRO PARA CRIAR O BANCO
+
+
+
+USE MinimalApi;
+
+CREATE TABLE users(
+    user_id INT PRIMARY KEY IDENTITY (1, 1),
+    username VARCHAR (20) NOT NULL,
+    password VARCHAR (20) NOT NULL,
+	name VARCHAR(50) NOT NULL,
+	birthDate DATE NOT NULL,
+	phone VARCHAR(15) NOT NULL,
+	city VARCHAR(50)
+);
